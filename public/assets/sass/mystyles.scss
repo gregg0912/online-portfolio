@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+// Set your brand colors
+$header-height: 3rem;
+
+/*========== Colors ==========*/
+$hue-color: 220;
+
+/* HSL color mode */
+$first-color: hsl($hue-color, 69%, 61%);
+
+// Font and Text
+$family-sans-serif: "Poppins", sans-serif;
+
+// Title Color
+$title-color: hsl($hue-color, 8%, 15%);
+
+// Body
+$body-background-color: hsl($hue-color, 60%, 99%);
+$body-color: hsl($hue-color, 8%, 45%);
+
+// Container
+$container-max-width: 832px;
+
+// Navbar
+$navbar-item-hover-color: $first-color;
+$navbar-item-active-color: $first-color;
+$navbar-item-hover-background-color: transparent;
+
+// Tabs
+$tabs-boxed-link-active-border-bottom-color: $first-color;
+$tabs-link-hover-border-bottom-color: $first-color;
+$tabs-link-hover-color: $first-color;
+
+// Input
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-hover-border-color: transparent;
+$input-focus-border-color: none;
+$input-focus-box-shadow-size: 0 0 0 0;
+$input-focus-box-shadow-color: none;
+$input-background-color: hsl($hue-color, 70%, 96%);
+$input-shadow: none;
+
+// Progress
+$progress-bar-background-color: hsl($hue-color, 92%, 85%);
+$progress-value-background-color: $first-color;
+
+// Button
+$button-hover-border-color: none;
+$button-background-color: $first-color;
+$button-hover-color: #fff;
+$button-color: #fff;
+
+// Footer
+$footer-background-color: hsl($hue-color, 69%, 61%);
+$footer-color: #fff;
+
+// Import only what you need from Bulma
+@import "../../../node_modules/bulma/sass/base/_all.sass";
+@import "../../../node_modules/bulma/sass/components/navbar.sass";
+@import "../../../node_modules/bulma/sass/components/level.sass";
+@import "../../../node_modules/bulma/sass/components/tabs.sass";
+@import "../../../node_modules/bulma/sass/elements/box.sass";
+@import "../../../node_modules/bulma/sass/elements/button.sass";
+@import "../../../node_modules/bulma/sass/elements/container.sass";
+@import "../../../node_modules/bulma/sass/elements/progress.sass";
+@import "../../../node_modules/bulma/sass/elements/title.sass";
+@import "../../../node_modules/bulma/sass/form/_all.sass";
+@import "../../../node_modules/bulma/sass/grid/columns.sass";
+@import "../../../node_modules/bulma/sass/helpers/_all.sass";
+@import "../../../node_modules/bulma/sass/layout/section.sass";
+@import "../../../node_modules/bulma/sass/layout/footer.sass";
+@import "../../../node_modules/bulma/sass/utilities/_all.sass";

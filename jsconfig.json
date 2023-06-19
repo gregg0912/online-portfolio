@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
+    "strict": true,
     "module": "esnext",
     "baseUrl": "./",
     "moduleResolution": "node",
@@ -15,5 +16,8 @@
       "dom.iterable",
       "scripthost"
     ]
+  },
+  "vueCompilerOptions": {
+    "target":2.7
   }
 }
