@@ -1,13 +1,15 @@
 /*==================== VARIABLES CSS ====================*/
-:root {
+html {
+  background-color: transparent;
+}
 
+:root {
   /*========== Colors ==========*/
   --hue-color: 220;
 
   /*========== HSL color mode ==========*/
   --first-color: hsl(var(--hue-color), 69%, 61%);
   --first-color-alt: hsl(var(--hue-color), 57%, 53%);
-  --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
   --title-color: hsl(var(--hue-color), 8%, 15%);
   --input-color: hsl(var(--hue-color), 70%, 96%);
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
@@ -261,7 +263,7 @@ body.dark-theme footer {
 }
 
 .footer__social:hover {
-  color: var(--first-color-lighter);
+  color: hsl(var(--hue-color), 92%, 85%);
 }
 
 .footer__subtitle {
@@ -297,6 +299,22 @@ body.dark-theme footer {
 /* Show scroll */
 .show-scroll {
   bottom: 5rem;
+}
+
+/*========== SCROLL BAR ==========*/
+::-webkit-scrollbar {
+  width: .6rem;
+  background-color: var(--scroll-bar-color);
+  border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-thumb-color);
+  border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--text-color-light);
 }
 
 /*==================== BUTTONS ====================*/
